@@ -11,10 +11,11 @@ namespace DAL
 {
     class DBConnect
     {
+        public const string DefaultConnectionString = @"Data Source =DESKTOP-A4AIADQ\SQLEXPRESS;Initial catalog = QLTS;Integrated Security = True";
         private SqlConnection connection;
         public DBConnect()
         {
-            connection = new SqlConnection(@"Data Source =DESKTOP-A4AIADQ\SQLEXPRESS;Initial catalog = QLTS;Integrated Security = True");
+            connection = new SqlConnection(DefaultConnectionString);
         }
 
         public DataTable ExecuteQuery(string query, object[] parameterValue = null)

@@ -50,6 +50,8 @@
     <Compile Include="DBConnect.cs" />
     <Compile Include="DrinkCategoryDAL.cs" />
     <Compile Include="DrinkDAL.cs" />
+    <Compile Include="NguyenLieuDAL.cs" />
+    <Compile Include="PhieuNhapDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

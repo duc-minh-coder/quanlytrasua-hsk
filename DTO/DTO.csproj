@@ -50,6 +50,9 @@
     <Compile Include="Bill.cs" />
     <Compile Include="BillInfo.cs" />
     <Compile Include="Drink.cs" />
+    <Compile Include="NguyenLieu.cs" />
+    <Compile Include="PhieuNhap.cs" />
+    <Compile Include="ChiTietPhieuNhap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

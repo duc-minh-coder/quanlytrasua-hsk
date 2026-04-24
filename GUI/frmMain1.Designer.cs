@@ -35,6 +35,7 @@ namespace QuanLyQuanTraSua
             this.btnTaiKhoan = new FontAwesome.Sharp.IconButton();
             this.btnAdmin = new FontAwesome.Sharp.IconButton();
             this.btnMatHang = new FontAwesome.Sharp.IconButton();
+            this.btnNhapHang = new FontAwesome.Sharp.IconButton();
             this.btnThongKe = new FontAwesome.Sharp.IconButton();
             this.btnTongQuan = new FontAwesome.Sharp.IconButton();
             this.pnlLogo = new System.Windows.Forms.Panel();
@@ -70,6 +71,7 @@ namespace QuanLyQuanTraSua
             this.pnlMenu.Controls.Add(this.btnDangXuat);
             this.pnlMenu.Controls.Add(this.btnTaiKhoan);
             this.pnlMenu.Controls.Add(this.btnAdmin);
+            this.pnlMenu.Controls.Add(this.btnNhapHang);
             this.pnlMenu.Controls.Add(this.btnMatHang);
             this.pnlMenu.Controls.Add(this.btnThongKe);
             this.pnlMenu.Controls.Add(this.btnTongQuan);
@@ -168,6 +170,28 @@ namespace QuanLyQuanTraSua
             this.btnMatHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMatHang.UseVisualStyleBackColor = true;
             this.btnMatHang.Click += new System.EventHandler(this.btnMatHang_Click);
+            // 
+            // btnNhapHang
+            // 
+            this.btnNhapHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNhapHang.FlatAppearance.BorderSize = 0;
+            this.btnNhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhapHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhapHang.ForeColor = System.Drawing.Color.White;
+            this.btnNhapHang.IconChar = FontAwesome.Sharp.IconChar.Truck;
+            this.btnNhapHang.IconColor = System.Drawing.Color.White;
+            this.btnNhapHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNhapHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhapHang.Location = new System.Drawing.Point(0, 220);
+            this.btnNhapHang.Name = "btnNhapHang";
+            this.btnNhapHang.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnNhapHang.Size = new System.Drawing.Size(200, 60);
+            this.btnNhapHang.TabIndex = 15;
+            this.btnNhapHang.Text = "Nhập Hàng";
+            this.btnNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhapHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNhapHang.UseVisualStyleBackColor = true;
+            this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click);
             // 
             // btnThongKe
             // 
@@ -431,6 +455,7 @@ namespace QuanLyQuanTraSua
         private FontAwesome.Sharp.IconButton btnThongKe;
         private System.Windows.Forms.Panel pnlLogo;
         private FontAwesome.Sharp.IconButton btnMatHang;
+        private FontAwesome.Sharp.IconButton btnNhapHang;
         private FontAwesome.Sharp.IconButton btnTaiKhoan;
         private FontAwesome.Sharp.IconButton btnAdmin;
         private FontAwesome.Sharp.IconButton btnTongQuan;

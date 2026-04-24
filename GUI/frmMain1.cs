@@ -102,6 +102,9 @@ namespace QuanLyQuanTraSua
                 case "frmMatHang":
                     lblTitleChildForm.Text = "Mặt Hàng";
                     break;
+                case "frmNhapHang":
+                    lblTitleChildForm.Text = "Nhập Hàng";
+                    break;
                 case "frmThongKe":
                     lblTitleChildForm.Text = "Thống Kê";
                     break;
@@ -142,6 +145,12 @@ namespace QuanLyQuanTraSua
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new frmMatHang());
+        }
+
+        private void btnNhapHang_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new frmNhapHang(this.currentUser));
         }
         private void btnAdmin_Click(object sender, EventArgs e)
         {

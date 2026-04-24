@@ -49,6 +49,8 @@
     <Compile Include="BillBUS.cs" />
     <Compile Include="DrinkBUS.cs" />
     <Compile Include="DrinkCategoryBUS.cs" />
+    <Compile Include="NguyenLieuBUS.cs" />
+    <Compile Include="NhapHangBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
