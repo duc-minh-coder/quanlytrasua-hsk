@@ -119,6 +119,21 @@ namespace BUS
             }
         }
 
+        public List<Account> SearchAccounts(string searchKeyword)
+        {
+            List<Account> listAccount = new List<Account>();
+            DataTable dt = accountDAL.searchAccounts(searchKeyword);
+            if (dt != null)
+            {
+                foreach (DataRow row in dt.Rows)
+                {
+                    Account account = new Account(row);
+                    listAccount.Add(account);
+                }
+            }
+            return listAccount;
+        }
+
         public StringBuilder getHashMD5(string pass)
         {
             MD5 hash = MD5.Create();

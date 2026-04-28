@@ -189,6 +189,24 @@ namespace QuanLyQuanTraSua
             this.Show();
         }
 
+        private void btnQuanLyNhanVien_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            this.Hide();
+            frmQuanLyNhanVien formQLNV = new frmQuanLyNhanVien(this);
+            formQLNV.ShowDialog();
+            btnHome_Click(sender, e);
+            this.Show();
+        }
+
+        private void btnDanhSachNhanVien_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color2);
+            frmDanhSachNhanVien formDSNV = new frmDanhSachNhanVien();
+            formDSNV.ShowDialog();
+            btnHome_Click(sender, e);
+        }
+
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
