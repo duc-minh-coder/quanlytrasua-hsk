@@ -33,6 +33,8 @@ namespace QuanLyQuanTraSua
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnDangXuat = new FontAwesome.Sharp.IconButton();
             this.btnTaiKhoan = new FontAwesome.Sharp.IconButton();
+            this.btnQuanLyNhanVien = new FontAwesome.Sharp.IconButton();
+            this.btnDanhSachNhanVien = new FontAwesome.Sharp.IconButton();
             this.btnAdmin = new FontAwesome.Sharp.IconButton();
             this.btnMatHang = new FontAwesome.Sharp.IconButton();
             this.btnNhapHang = new FontAwesome.Sharp.IconButton();
@@ -70,6 +72,8 @@ namespace QuanLyQuanTraSua
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.pnlMenu.Controls.Add(this.btnDangXuat);
             this.pnlMenu.Controls.Add(this.btnTaiKhoan);
+            this.pnlMenu.Controls.Add(this.btnQuanLyNhanVien);
+            this.pnlMenu.Controls.Add(this.btnDanhSachNhanVien);
             this.pnlMenu.Controls.Add(this.btnAdmin);
             this.pnlMenu.Controls.Add(this.btnNhapHang);
             this.pnlMenu.Controls.Add(this.btnMatHang);
@@ -149,8 +153,52 @@ namespace QuanLyQuanTraSua
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
-            // btnMatHang
+            // btnDanhSachNhanVien
             // 
+            this.btnDanhSachNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDanhSachNhanVien.FlatAppearance.BorderSize = 0;
+            this.btnDanhSachNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDanhSachNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhSachNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnDanhSachNhanVien.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.btnDanhSachNhanVien.IconColor = System.Drawing.Color.White;
+            this.btnDanhSachNhanVien.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDanhSachNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDanhSachNhanVien.Location = new System.Drawing.Point(0, 220);
+            this.btnDanhSachNhanVien.Name = "btnDanhSachNhanVien";
+            this.btnDanhSachNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnDanhSachNhanVien.Size = new System.Drawing.Size(200, 60);
+            this.btnDanhSachNhanVien.TabIndex = 16;
+            this.btnDanhSachNhanVien.Text = "Danh Sách NV";
+            this.btnDanhSachNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDanhSachNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDanhSachNhanVien.UseVisualStyleBackColor = true;
+            this.btnDanhSachNhanVien.Click += new System.EventHandler(this.btnDanhSachNhanVien_Click);
+            // 
+            // btnQuanLyNhanVien
+            // 
+            this.btnQuanLyNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQuanLyNhanVien.FlatAppearance.BorderSize = 0;
+            this.btnQuanLyNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuanLyNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLyNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnQuanLyNhanVien.IconChar = FontAwesome.Sharp.IconChar.UsersCog;
+            this.btnQuanLyNhanVien.IconColor = System.Drawing.Color.White;
+            this.btnQuanLyNhanVien.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnQuanLyNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuanLyNhanVien.Location = new System.Drawing.Point(0, 280);
+            this.btnQuanLyNhanVien.Name = "btnQuanLyNhanVien";
+            this.btnQuanLyNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnQuanLyNhanVien.Size = new System.Drawing.Size(200, 60);
+            this.btnQuanLyNhanVien.TabIndex = 17;
+            this.btnQuanLyNhanVien.Text = "Quản Lý NV";
+            this.btnQuanLyNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuanLyNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQuanLyNhanVien.UseVisualStyleBackColor = true;
+            this.btnQuanLyNhanVien.Click += new System.EventHandler(this.btnQuanLyNhanVien_Click);
+            // 
+            // btnMatHang
+            //
             this.btnMatHang.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMatHang.FlatAppearance.BorderSize = 0;
             this.btnMatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -458,6 +506,8 @@ namespace QuanLyQuanTraSua
         private FontAwesome.Sharp.IconButton btnNhapHang;
         private FontAwesome.Sharp.IconButton btnTaiKhoan;
         private FontAwesome.Sharp.IconButton btnAdmin;
+        private FontAwesome.Sharp.IconButton btnDanhSachNhanVien;
+        private FontAwesome.Sharp.IconButton btnQuanLyNhanVien;
         private FontAwesome.Sharp.IconButton btnTongQuan;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;

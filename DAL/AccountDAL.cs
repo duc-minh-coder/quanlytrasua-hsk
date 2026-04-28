@@ -82,5 +82,19 @@ namespace DAL
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
+
+        // Tim kiem nhan vien
+        public DataTable searchAccounts(string keyword)
+        {
+            string query = @"SELECT * FROM ACCOUNT 
+                           WHERE Username LIKE @keyword 
+                           OR Realname LIKE @keyword 
+                           OR Email LIKE @keyword 
+                           OR PhoneNumber LIKE @keyword";
+            object[] value = new object[] { "%" + keyword + "%" };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            return dt;
+        }
     }
 }
